@@ -3,6 +3,7 @@ def index
 @portfolio_items = Portfolio.all
 end
 def show
+  @portfolio_items = Portfolio.find(params[:id])
 end
 
 def new

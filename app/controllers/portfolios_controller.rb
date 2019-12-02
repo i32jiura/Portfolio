@@ -41,4 +41,16 @@ def update
   end
 end
 
+def destroy
+  #select class to destroy
+  @portfolio_items = Portfolio.find(params[:id])
+  #destroy selected item
+  @portfolio_items.destroy
+
+  #redirect
+  respond_to do |format|
+    format.html { redirect_to portfolios_url, notice: 'Portfolio was successfully destroyed.' }
+  end
+end
+
 end

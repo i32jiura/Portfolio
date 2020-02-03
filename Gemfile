@@ -5,6 +5,8 @@ ruby '2.5.1'
 
 gem 'friendly_id', '~> 5.2.4'
 
+gem 'devise'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
 # Use postgresql as the database for Active Record
